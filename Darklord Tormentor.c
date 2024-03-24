@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h> // لاستخدام system()
+#include <stdlib.h>
 
 int main() {
     int i = 1;
@@ -34,7 +34,7 @@ int main() {
         fclose(py_file);
 
         char open_command[50];
-        sprintf(open_command, "start file.html && start notepad file.txt && start python file.py"); // افتراضيًا على Windows
+        sprintf(open_command, "start file.html && start notepad file.txt && start python file.py");
         system(open_command);
 
         printf("Files created and opened.\n");
